@@ -30,7 +30,7 @@ export default function ContactPage() {
             <div className="flex flex-col gap-5">
               {[
                 { label: 'Email', value: 'info@akpharmagroup.com', href: 'mailto:info@akpharmagroup.com', sub: 'We respond within one business day' },
-                { label: 'Phone', value: '[Phone — placeholder]', href: undefined, sub: 'Mon–Sat, 9:00 AM – 6:00 PM IST' },
+                { label: 'Phone', value: '03211-244587', href: 'tel:03211244587', sub: 'Landline · Mon–Sat, 9:00 AM – 6:00 PM IST' },
                 { label: 'Registered Office', value: 'West Bengal, India', href: undefined, sub: 'Headquarters & supply coordination' },
               ].map((c) => (
                 <div key={c.label} className="card-accent">

@@ -148,8 +148,8 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <p style={{ fontSize: '11px', color: '#6B7280', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '3px' }}>Phone</p>
-                <p style={{ fontSize: '13.5px', color: '#9CA3AF' }}>[Phone — placeholder]</p>
+                <p style={{ fontSize: '11px', color: '#6B7280', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '3px' }}>Landline</p>
+                <a href="tel:03211244587" style={{ fontSize: '13.5px', color: '#9CA3AF', textDecoration: 'none' }}>03211-244587</a>
               </div>
             </div>
           </div>
