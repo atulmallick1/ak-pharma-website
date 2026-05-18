@@ -29,9 +29,9 @@ export default function ContactPage() {
             {/* Contact info cards */}
             <div className="flex flex-col gap-5">
               {[
-                { label: 'Email', value: 'akpharmagroup@gmail.com', href: 'mailto:akpharmagroup@gmail.com', sub: 'We respond within one business day' },
+                { label: 'Email', value: 'info@akpharmagroup.com', href: 'mailto:info@akpharmagroup.com', sub: 'We respond within one business day' },
                 { label: 'Phone', value: '[Phone — placeholder]', href: undefined, sub: 'Mon–Sat, 9:00 AM – 6:00 PM IST' },
-                { label: 'Registered Office', value: 'West Bengal, India\n[Full address — placeholder]', href: undefined, sub: 'Headquarters & supply coordination' },
+                { label: 'Registered Office', value: 'West Bengal, India', href: undefined, sub: 'Headquarters & supply coordination' },
               ].map((c) => (
                 <div key={c.label} className="card-accent">
                   <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#1E56A0', marginBottom: '6px' }}>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 </p>
 
                 <form
-                  action={`mailto:akpharmagroup@gmail.com`}
+                  action={`mailto:info@akpharmagroup.com`}
                   method="POST"
                   encType="text/plain"
                   className="flex flex-col gap-5"

@@ -36,11 +36,11 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-5" aria-label="AK Pharma Group">
               <Image
-                src="/logo.svg"
+                src="/logo-white.svg"
                 alt="AK Pharma Group"
                 width={160}
                 height={43}
-                className="h-11 w-auto brightness-0 invert"
+                className="h-11 w-auto"
               />
             </Link>
             <p style={{ fontSize: '13.5px', lineHeight: '1.7', color: '#9CA3AF', maxWidth: '240px' }}>
@@ -135,17 +135,16 @@ export default function Footer() {
               <div>
                 <p style={{ fontSize: '11px', color: '#6B7280', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '3px' }}>Registered Office</p>
                 <p style={{ fontSize: '13.5px', color: '#9CA3AF', lineHeight: '1.6' }}>
-                  West Bengal, India<br />
-                  [Full address — placeholder]
+                  West Bengal, India
                 </p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', color: '#6B7280', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '3px' }}>Email</p>
                 <a
-                  href="mailto:akpharmagroup@gmail.com"
+                  href="mailto:info@akpharmagroup.com"
                   style={{ fontSize: '13.5px', color: '#7AB3E8', textDecoration: 'none' }}
                 >
-                  akpharmagroup@gmail.com
+                  info@akpharmagroup.com
                 </a>
               </div>
               <div>

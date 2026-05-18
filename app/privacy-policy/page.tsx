@@ -180,8 +180,8 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p className="mt-3">
                 To exercise any of these rights, please contact us at{' '}
-                <a href="mailto:akpharmagroup@gmail.com" style={{ color: '#1E56A0' }}>
-                  akpharmagroup@gmail.com
+                <a href="mailto:info@akpharmagroup.com" style={{ color: '#1E56A0' }}>
+                  info@akpharmagroup.com
                 </a>
                 . We will respond within 30 days.
               </p>
@@ -245,8 +245,8 @@ export default function PrivacyPolicyPage() {
                 <p>West Bengal, India</p>
                 <p>
                   Email:{' '}
-                  <a href="mailto:akpharmagroup@gmail.com" style={{ color: '#1E56A0' }}>
-                    akpharmagroup@gmail.com
+                  <a href="mailto:info@akpharmagroup.com" style={{ color: '#1E56A0' }}>
+                    info@akpharmagroup.com
                   </a>
                 </p>
               </div>

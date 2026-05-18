@@ -551,8 +551,8 @@ export default function HomePage() {
             <Link href="/contact" className="btn-navy" style={{ backgroundColor: '#FFFFFF', color: '#0B1F3A' }}>
               Contact Us &rarr;
             </Link>
-            <a href="mailto:akpharmagroup@gmail.com" className="btn-ghost-white">
-              akpharmagroup@gmail.com
+            <a href="mailto:info@akpharmagroup.com" className="btn-ghost-white">
+              info@akpharmagroup.com
             </a>
           </div>
         </div>
