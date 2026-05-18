@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Navy scale ─────────────────────────────────────────────── */
+  --color-navy-950: #060F1E;
+  --color-navy-900: #0B1F3A;   /* deep navy — hero, footer */
+  --color-navy-800: #112D56;
+  --color-navy-700: #1A3D72;
+  --color-navy-600: #1E56A0;   /* primary action blue */
+  --color-navy-500: #2E6DC4;
+  --color-navy-400: #4A8FD9;
+  --color-navy-300: #7AB3E8;
+  --color-navy-200: #B0D3F5;
+  --color-navy-100: #DDEEFF;
+  --color-navy-50:  #F0F7FF;
+
+  /* ── Cool neutrals ──────────────────────────────────────────── */
+  --color-cool-900: #111827;
+  --color-cool-800: #1F2937;
+  --color-cool-700: #374151;
+  --color-cool-600: #4B5563;
+  --color-cool-500: #6B7280;
+  --color-cool-400: #9CA3AF;
+  --color-cool-300: #D1D5DB;
+  --color-cool-200: #E5E7EB;
+  --color-cool-100: #F3F4F6;
+  --color-cool-50:  #F9FAFB;
+
+  /* ── Page surfaces ──────────────────────────────────────────── */
+  --color-bg:       #F4F8FC;   /* cool white with slight blue tint */
+  --color-surface:  #FFFFFF;
+  --color-alt:      #EBF2FA;   /* alternate section background */
+
+  /* ── Semantic ───────────────────────────────────────────────── */
+  --color-success:      #166534;
+  --color-success-soft: #DCFCE7;
+  --color-danger:       #991B1B;
+  --color-danger-soft:  #FEE2E2;
+
+  /* ── Fonts ──────────────────────────────────────────────────── */
+  --font-display: var(--font-cormorant), Georgia, 'Times New Roman', serif;
+  --font-sans:    var(--font-dm-sans), 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #F4F8FC;
+  color: #111827;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Shadows ────────────────────────────────────────────────────── */
+.shadow-navy-sm  { box-shadow: 0 2px 6px rgba(11,31,58,0.08), 0 1px 2px rgba(11,31,58,0.05); }
+.shadow-navy-md  { box-shadow: 0 6px 18px rgba(11,31,58,0.10), 0 2px 4px rgba(11,31,58,0.06); }
+.shadow-navy-lg  { box-shadow: 0 16px 40px rgba(11,31,58,0.14), 0 4px 10px rgba(11,31,58,0.07); }
+
+/* ── Gradients ──────────────────────────────────────────────────── */
+.grad-navy     { background: linear-gradient(135deg, #1E56A0 0%, #1A3D72 50%, #0B1F3A 100%); }
+.grad-navy-bar { background: linear-gradient(90deg, #4A8FD9 0%, #1E56A0 55%, #0B1F3A 100%); }
+
+/* ── Section overline ───────────────────────────────────────────── */
+.overline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-dm-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #1E56A0;
+}
+.overline-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-dm-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7AB3E8;
+}
+
+/* ── Cards ──────────────────────────────────────────────────────── */
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(11,31,58,0.06), 0 1px 2px rgba(11,31,58,0.04);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+.card:hover {
+  box-shadow: 0 8px 22px rgba(11,31,58,0.11), 0 2px 4px rgba(11,31,58,0.06);
+  transform: translateY(-2px);
+}
+
+/* Left-border accent card — AK Pharma signature style */
+.card-accent {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-left: 3px solid #1E56A0;
+  border-radius: 0 6px 6px 0;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(11,31,58,0.06);
+  transition: box-shadow 220ms ease, border-left-color 220ms ease;
+}
+.card-accent:hover {
+  box-shadow: 0 8px 22px rgba(11,31,58,0.10);
+  border-left-color: #4A8FD9;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────── */
+.btn-navy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 11px 26px;
+  background-color: #1E56A0;
+  color: #FFFFFF;
+  font-family: var(--font-dm-sans);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-navy:hover {
+  background-color: #1A3D72;
+  box-shadow: 0 4px 12px rgba(30,86,160,0.30);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 11px 26px;
+  border: 1.5px solid #B0D3F5;
+  color: #1E56A0;
+  font-family: var(--font-dm-sans);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: border-color 200ms ease, background-color 200ms ease;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  border-color: #1E56A0;
+  background-color: #F0F7FF;
+}
+
+.btn-ghost-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 11px 26px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  color: #FFFFFF;
+  font-family: var(--font-dm-sans);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: border-color 200ms ease, background-color 200ms ease;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+.btn-ghost-white:hover {
+  border-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.08);
+}
+
+/* ── Section divider ────────────────────────────────────────────── */
+.section-rule {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: #1E56A0;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+.section-rule-light {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: #4A8FD9;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
