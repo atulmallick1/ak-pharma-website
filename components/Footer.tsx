@@ -174,6 +174,20 @@ export default function Footer() {
             </Link>
             <span style={{ color: '#374151' }}>·</span>
             <span style={{ fontSize: '12.5px', color: '#6B7280' }}>West Bengal, India</span>
+            <span style={{ color: '#374151' }}>·</span>
+            <span style={{ fontSize: '12.5px', color: '#6B7280' }}>
+              Built and managed by{' '}
+              <a
+                href="https://roseleap.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#6B7280', textDecoration: 'none' }}
+                onMouseEnter={e => (e.currentTarget.style.color = '#9CA3AF')}
+                onMouseLeave={e => (e.currentTarget.style.color = '#6B7280')}
+              >
+                Roseleap
+              </a>
+            </span>
           </div>
         </div>
       </div>
