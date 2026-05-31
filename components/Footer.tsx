@@ -185,7 +185,7 @@ export default function Footer() {
                 onMouseEnter={e => (e.currentTarget.style.color = '#9CA3AF')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#6B7280')}
               >
-                Roseleap
+                RoseLeap
               </a>
             </span>
           </div>
