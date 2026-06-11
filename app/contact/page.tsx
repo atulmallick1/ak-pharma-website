@@ -119,12 +119,24 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
+                    <label htmlFor="consent" className="flex items-start gap-2.5 cursor-pointer" style={{ marginBottom: '18px' }}>
+                      <input
+                        id="consent"
+                        name="consent"
+                        type="checkbox"
+                        required
+                        className="mt-1 h-4 w-4 shrink-0 cursor-pointer"
+                        style={{ accentColor: '#1E56A0' }}
+                      />
+                      <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12.5px', lineHeight: 1.6, color: '#6B7280' }}>
+                        I agree to AK Pharma Group processing my details under the{' '}
+                        <Link href="/privacy-policy" style={{ color: '#1E56A0', textDecoration: 'underline' }}>Privacy Policy</Link>{' '}
+                        to respond to this enquiry. <span style={{ color: '#B91C1C' }}>*</span>
+                      </span>
+                    </label>
                     <button type="submit" className="btn-navy" style={{ width: '100%', justifyContent: 'center', padding: '14px 28px' }}>
                       Submit Enquiry
                     </button>
-                    <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: '#9CA3AF', marginTop: '8px', textAlign: 'center' }}>
-                      By submitting, you agree to our <Link href="/privacy-policy" style={{ color: '#1E56A0' }}>Privacy Policy</Link>.
-                    </p>
                   </div>
                 </form>
               </div>

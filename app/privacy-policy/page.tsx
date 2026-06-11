@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — AK Pharma Group',
-  description: 'Privacy Policy for AK Pharma Group. Learn how we collect, use, and protect your information.',
+  description: 'How AK Pharma Group collects, uses, and protects personal data under the Digital Personal Data Protection Act, 2023.',
 }
 
 export default function PrivacyPolicyPage() {
-  const lastUpdated = 'May 2025'
+  const lastUpdated = '12 June 2026'
 
   return (
     <>
@@ -46,12 +46,14 @@ export default function PrivacyPolicyPage() {
             }}
           >
 
-            <Section title="1. Introduction">
+            <Section title="1. Who We Are — the Data Fiduciary">
               <p>
                 AK Pharma Group (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), headquartered in West Bengal, India,
-                operates the website <strong>akpharmagroup.com</strong> (the &ldquo;Website&rdquo;). This Privacy
-                Policy explains how we collect, use, disclose, and safeguard your information when
-                you visit our Website or contact us through it.
+                operates the website <strong>akpharmagroup.com</strong> (the &ldquo;Website&rdquo;). Under the
+                Digital Personal Data Protection Act, 2023 (&ldquo;DPDP Act&rdquo;), AK Pharma Group is the
+                <strong> Data Fiduciary</strong> for any personal data collected through this Website. This
+                Privacy Policy explains how we collect, use, disclose, and safeguard your information
+                when you visit our Website or contact us through it.
               </p>
               <p className="mt-3">
                 By using our Website, you agree to the collection and use of information in
@@ -60,13 +62,37 @@ export default function PrivacyPolicyPage() {
             </Section>
 
             <Section title="2. Information We Collect">
-              <p>We may collect the following types of information:</p>
+              <p>We collect only what is necessary to respond to an enquiry or fulfil a supply request:</p>
               <ul className="list-none mt-3 flex flex-col gap-2">
                 {[
                   { term: 'Contact Information', detail: 'Name, email address, phone number, and organisation name provided when you use our contact form or send us an email enquiry.' },
                   { term: 'Enquiry Details', detail: 'Product requirements, procurement details, and other information you voluntarily provide in your enquiry.' },
-                  { term: 'Technical Data', detail: 'IP address, browser type, pages visited, and time spent on our Website — collected automatically via standard server logs.' },
+                  { term: 'Technical Data', detail: 'IP address, browser type, pages visited, and time spent on our Website — collected automatically via standard server logs for security, fraud prevention, and performance purposes.' },
                   { term: 'Cookies', detail: 'Small data files stored on your browser for basic website functionality. We do not use cookies for advertising or cross-site tracking.' },
+                ].map((item) => (
+                  <li key={item.term} className="flex gap-3">
+                    <span style={{ color: '#1E56A0', fontWeight: 700, flexShrink: 0 }}>→</span>
+                    <span><strong>{item.term}:</strong> {item.detail}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3">
+                We do not ask for, and you should not submit, sensitive personal, medical, financial,
+                or government-ID information through this Website. Pharmaceutical enquiries should
+                refer to product names and quantities, not patient-level data.
+              </p>
+            </Section>
+
+            <Section title="3. Lawful Basis Under the DPDP Act">
+              <p>
+                We process your personal data on one or more of the following lawful bases recognised
+                by the DPDP Act:
+              </p>
+              <ul className="list-none mt-3 flex flex-col gap-2">
+                {[
+                  { term: 'Consent', detail: 'When you voluntarily submit a contact form or enquiry, you consent to us using your details to respond to that enquiry.' },
+                  { term: 'Legitimate Use', detail: 'To respond to communications you initiate, manage institutional supply relationships, maintain records of business correspondence, and ensure the security of this Website.' },
+                  { term: 'Legal Obligation', detail: 'To comply with the Drugs and Cosmetics Act, 1940, GST requirements, and other applicable Indian regulations.' },
                 ].map((item) => (
                   <li key={item.term} className="flex gap-3">
                     <span style={{ color: '#1E56A0', fontWeight: 700, flexShrink: 0 }}>→</span>
@@ -76,7 +102,7 @@ export default function PrivacyPolicyPage() {
               </ul>
             </Section>
 
-            <Section title="3. How We Use Your Information">
+            <Section title="4. How We Use Your Information">
               <p>We use the information we collect to:</p>
               <ul className="list-none mt-3 flex flex-col gap-2">
                 {[
@@ -94,34 +120,16 @@ export default function PrivacyPolicyPage() {
                 ))}
               </ul>
               <p className="mt-3">
-                We do not sell, rent, or trade your personal information to third parties for
-                marketing purposes.
+                We do not sell, rent, or trade your personal information. We do not use your details
+                for unrelated marketing without your consent.
               </p>
-            </Section>
-
-            <Section title="4. Legal Basis for Processing">
-              <p>
-                We process your personal information under the following legal bases in accordance
-                with the Information Technology Act, 2000 and applicable Indian data protection law:
-              </p>
-              <ul className="list-none mt-3 flex flex-col gap-2">
-                {[
-                  { term: 'Consent', detail: 'When you submit a contact form or enquiry, you consent to us processing your information to respond.' },
-                  { term: 'Legitimate Interest', detail: 'To operate our website, manage institutional supply relationships, and maintain business records.' },
-                  { term: 'Legal Obligation', detail: 'To comply with the Drugs and Cosmetics Act, 1940, GST requirements, and other applicable Indian regulations.' },
-                ].map((item) => (
-                  <li key={item.term} className="flex gap-3">
-                    <span style={{ color: '#1E56A0', fontWeight: 700, flexShrink: 0 }}>→</span>
-                    <span><strong>{item.term}:</strong> {item.detail}</span>
-                  </li>
-                ))}
-              </ul>
             </Section>
 
             <Section title="5. Information Sharing">
               <p>
                 We do not share your personal information with third parties except in the following
-                limited circumstances:
+                limited circumstances, in which the recipients act as Data Processors or independently
+                regulated entities:
               </p>
               <ul className="list-none mt-3 flex flex-col gap-2">
                 {[
@@ -143,7 +151,8 @@ export default function PrivacyPolicyPage() {
                 We retain your personal information only for as long as necessary to fulfil the
                 purposes for which it was collected, or as required by law. Enquiry records are
                 typically retained for a period of 3 years. Supply and transaction records are
-                retained as required under the Drugs and Cosmetics Act and GST regulations.
+                retained as required under the Drugs and Cosmetics Act and GST regulations, after
+                which data is deleted or anonymised.
               </p>
             </Section>
 
@@ -151,26 +160,25 @@ export default function PrivacyPolicyPage() {
               <p>
                 We implement reasonable technical and organisational measures to protect your
                 personal information against unauthorised access, disclosure, alteration, or
-                destruction. However, no method of transmission over the internet is 100%
-                secure, and we cannot guarantee absolute security.
-              </p>
-              <p className="mt-3">
-                Our Website uses HTTPS encryption for all data transmitted between your browser
-                and our servers.
+                destruction — HTTPS encryption in transit, access controls on our inbox, and
+                security headers on every page. However, no method of transmission over the
+                internet is 100% secure, and we cannot guarantee absolute security.
               </p>
             </Section>
 
-            <Section title="8. Your Rights">
+            <Section title="8. Your Rights as a Data Principal">
               <p>
-                Under applicable Indian law, you may have the right to:
+                Under the DPDP Act, you (as a <strong>Data Principal</strong>) have the right to:
               </p>
               <ul className="list-none mt-3 flex flex-col gap-2">
                 {[
-                  'Access the personal information we hold about you',
-                  'Request correction of inaccurate or incomplete information',
-                  'Request deletion of your personal information (subject to legal retention obligations)',
-                  'Withdraw consent for processing where consent is the legal basis',
-                  'Lodge a complaint with a relevant regulatory authority',
+                  'Access the personal data we hold about you',
+                  'Request correction or updating of inaccurate or incomplete data',
+                  'Request erasure of your personal data (subject to legal retention obligations)',
+                  'Withdraw consent at any time, where consent is our lawful basis',
+                  'Nominate another individual to exercise your rights in the event of your death or incapacity',
+                  'Raise a grievance with our Grievance Officer (see section 12)',
+                  'Approach the Data Protection Board of India if your grievance is not satisfactorily resolved',
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <span style={{ color: '#1E56A0', fontWeight: 700, flexShrink: 0 }}>✓</span>
@@ -179,20 +187,23 @@ export default function PrivacyPolicyPage() {
                 ))}
               </ul>
               <p className="mt-3">
-                To exercise any of these rights, please contact us at{' '}
+                To exercise any of these rights, email{' '}
                 <a href="mailto:info@akpharmagroup.com" style={{ color: '#1E56A0' }}>
                   info@akpharmagroup.com
-                </a>
-                . We will respond within 30 days.
+                </a>{' '}
+                with the subject &ldquo;Privacy request&rdquo;. We will respond within a reasonable
+                timeframe and in any case within the statutory period.
               </p>
             </Section>
 
-            <Section title="9. Cookies">
+            <Section title="9. Cookies and Tracking">
               <p>
-                Our Website uses only essential cookies necessary for the Website to function.
-                We do not use advertising cookies, third-party analytics cookies, or tracking
-                pixels that share data with external parties. You may configure your browser to
-                refuse cookies, but this may affect certain Website functionality.
+                Our Website uses only cookies that are strictly necessary for the Website to
+                function. We do not use advertising cookies, third-party analytics cookies, or
+                tracking pixels that share data with external parties. Where consent is required
+                for any non-essential cookies, you will see a banner inviting you to accept or
+                decline. You may also configure your browser to refuse cookies at any time, but
+                this may affect certain Website functionality.
               </p>
             </Section>
 
@@ -213,26 +224,51 @@ export default function PrivacyPolicyPage() {
               </p>
             </Section>
 
-            <Section title="12. Changes to This Policy">
+            <Section title="12. Grievance Officer">
               <p>
-                We may update this Privacy Policy from time to time. The revised version will
-                be posted on this page with an updated &ldquo;last updated&rdquo; date. We encourage you
-                to review this Policy periodically. Continued use of our Website after changes
-                constitutes acceptance of the revised Policy.
+                In accordance with the DPDP Act and the Information Technology Act, 2000, the
+                following officer is designated to receive privacy-related grievances:
+              </p>
+              <div
+                className="mt-4 p-5 rounded"
+                style={{ backgroundColor: '#F4F8FC', border: '1px solid #C9DAEA' }}
+              >
+                <p style={{ fontWeight: 600, color: '#0B1F3A', marginBottom: '8px' }}>
+                  Grievance Officer — AK Pharma Group
+                </p>
+                <p>
+                  Email:{' '}
+                  <a href="mailto:info@akpharmagroup.com" style={{ color: '#1E56A0' }}>
+                    info@akpharmagroup.com
+                  </a>
+                </p>
+                <p>Subject line: &ldquo;Privacy grievance&rdquo;</p>
+              </div>
+              <p className="mt-3">
+                We will acknowledge grievances within 7 working days and aim to resolve them
+                within 30 days, in line with statutory expectations.
               </p>
             </Section>
 
-            <Section title="13. Governing Law">
+            <Section title="13. Changes to This Policy">
               <p>
-                This Privacy Policy is governed by the laws of India, including the Information
-                Technology Act, 2000 and the Information Technology (Reasonable Security
-                Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.
+                We may update this Privacy Policy from time to time. The revised version will
+                be posted on this page with an updated &ldquo;last updated&rdquo; date, and material
+                changes will be highlighted at the top of the page. Continued use of our Website
+                after changes constitutes acceptance of the revised Policy.
+              </p>
+            </Section>
+
+            <Section title="14. Governing Law">
+              <p>
+                This Privacy Policy is governed by the laws of India, including the Digital
+                Personal Data Protection Act, 2023 and the Information Technology Act, 2000.
                 Any disputes shall be subject to the exclusive jurisdiction of the courts of
                 West Bengal, India.
               </p>
             </Section>
 
-            <Section title="14. Contact Us">
+            <Section title="15. Contact Us">
               <p>
                 For any questions, concerns, or requests regarding this Privacy Policy or your
                 personal information, please contact us:
