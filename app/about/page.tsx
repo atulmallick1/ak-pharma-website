@@ -121,7 +121,7 @@ export default function AboutPage() {
                 { label: 'Company', value: 'AK Pharma Group' },
                 { label: 'Headquarters', value: 'West Bengal, India' },
                 { label: 'Sector', value: 'Pharmaceuticals — Defence & Institutional Supply' },
-                { label: 'Supply Reach', value: 'Pan-India (all 28 states)' },
+                { label: 'Supply Reach', value: 'All 28 states & 8 UTs, incl. Andaman & Nicobar and Lakshadweep Islands' },
               ].map((item) => (
                 <div
                   key={item.label}
