@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'About Us — AK Pharma Group',
   description:
-    'Learn about AK Pharma Group, founded by Ashok Kumar Mallick — a retired ex-serviceman of the Indian Army — in West Bengal. A trusted pharmaceutical supplier to India\'s defence forces and institutional buyers.',
+    'Learn about AK Pharma Group, founded by Ashok Kumar Mallick — a retired ex-serviceman of the Indian Army, Army Medical Corps — in West Bengal. A trusted pharmaceutical supplier to India\'s defence forces and institutional buyers.',
 }
 
 const values = [
@@ -81,14 +81,14 @@ export default function AboutPage() {
                   marginBottom: '1.5rem',
                 }}
               >
-                Founder &amp; Managing Director | Indian Army (Retired)
+                Founder &amp; Managing Director | Indian Army (Retired) — Army Medical Corps
               </p>
               <div
                 className="flex flex-col gap-4"
                 style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#4B5563', lineHeight: '1.75' }}
               >
                 <p>
-                  Ashok Kumar Mallick is a retired ex-serviceman of the Indian Army — a man who dedicated
+                  Ashok Kumar Mallick is a retired ex-serviceman of the Indian Army, Army Medical Corps — a man who dedicated
                   years of his life to serving the nation in uniform. After retiring with honour, he
                   chose to continue serving India&rsquo;s defence forces in a different way: by ensuring
                   they never face a shortage of quality medicines.
@@ -117,7 +117,7 @@ export default function AboutPage() {
             {/* Founder credentials card */}
             <div className="flex flex-col gap-4">
               {[
-                { label: 'Role', value: 'Founder & Managing Director | Indian Army (Retired)' },
+                { label: 'Role', value: 'Founder & Managing Director | Indian Army (Retired), AMC' },
                 { label: 'Company', value: 'AK Pharma Group' },
                 { label: 'Headquarters', value: 'West Bengal, India' },
                 { label: 'Sector', value: 'Pharmaceuticals — Defence & Institutional Supply' },

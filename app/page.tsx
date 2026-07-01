@@ -337,7 +337,7 @@ export default function HomePage() {
                   letterSpacing: '0.04em',
                 }}
               >
-                — Ashok Kumar Mallick, Founder | Indian Army (Retired)
+                — Ashok Kumar Mallick, Founder | Indian Army (Retired), Army Medical Corps
               </p>
               <div className="mt-8">
                 <Link href="/about" className="btn-navy">
@@ -352,7 +352,7 @@ export default function HomePage() {
                 { title: 'West Bengal Headquarters', body: 'Rooted in West Bengal with a pan-India supply network covering hospitals, defence establishments, and institutional buyers across all states.' },
                 { title: 'Uninterrupted Supply Chain', body: 'Our procurement and logistics systems are built around the zero-tolerance supply standards demanded by defence and critical healthcare institutions.' },
                 { title: 'Full Regulatory Compliance', body: 'ISO 9001:2015, CE, and WHO-GMP certified. Valid Drug License and GeM registration — every document in order, every batch traceable.' },
-                { title: 'Founder-Led Integrity', body: 'Founded by Ashok Kumar Mallick, a retired Indian Army ex-serviceman whose military discipline and personal commitment to quality carry into every aspect of the business.' },
+                { title: 'Founder-Led Integrity', body: 'Founded by Ashok Kumar Mallick, a retired Indian Army (Army Medical Corps) ex-serviceman whose military discipline and personal commitment to quality carry into every aspect of the business.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 items-start">
                   <div
