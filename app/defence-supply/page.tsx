@@ -233,7 +233,7 @@ export default function DefenceSupplyPage() {
               { title: 'Zero Supply Interruption', body: 'Buffer stock management and dedicated logistics ensure no establishment faces a medicine stock-out.' },
               { title: 'Full Documentation', body: 'Batch certificates, quality compliance documents, and quality reports provided with every consignment.' },
               { title: 'Tender Expertise', body: 'Experienced in DGAFMS, AFMSD, and service-specific tender processes. Technical bids prepared correctly, first time.' },
-              { title: 'Pan-India Reach', body: 'Supply to defence establishments across all Indian states — Leh to Kanyakumari, Gujarat to Arunachal Pradesh.' },
+              { title: 'Pan-India Reach', body: 'Supply to defence establishments across all Indian states and Union Territories — Leh to Kanyakumari, Gujarat to Arunachal Pradesh, and out to the Andaman & Nicobar and Lakshadweep Islands.' },
             ].map((item, i) => (
               <div
                 key={i}

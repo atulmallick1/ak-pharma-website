@@ -26,7 +26,7 @@ const services = [
   {
     title: 'B2B Institutional Supply',
     body:
-      'Hospitals, distributors, nursing homes, and government healthcare institutions across all 28 states rely on AK Pharma Group for consistent, quality-assured pharmaceutical supply with dependable logistics.',
+      'Hospitals, distributors, nursing homes, and government healthcare institutions across all states and UTs rely on AK Pharma Group for consistent, quality-assured pharmaceutical supply with dependable logistics.',
     href: '/b2b',
     icon: '🏥',
   },

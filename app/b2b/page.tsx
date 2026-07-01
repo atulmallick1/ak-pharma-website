@@ -159,7 +159,7 @@ export default function B2BPage() {
                 { icon: '✦', title: 'ISO 9001:2015 | CE | WHO-GMP Certified', body: 'All products sourced from ISO 9001:2015, CE, and WHO-GMP certified manufacturers — quality backed by international certifications and documentation.' },
                 { icon: '✦', title: 'Competitive Institutional Pricing', body: 'Volume-based pricing for institutional buyers with transparent quotations and no hidden charges.' },
                 { icon: '✦', title: 'Full Compliance Documentation', body: 'Batch certificates, regulatory compliance records, and drug license documentation provided with every supply.' },
-                { icon: '✦', title: 'Pan-India Logistics', body: 'Reliable supply to all Indian states with proper cold-chain management and traceable delivery.' },
+                { icon: '✦', title: 'Pan-India Logistics', body: 'Reliable supply to all Indian states, Union Territories, and defence-present island territories, with proper cold-chain management and traceable delivery.' },
               ].map((item) => (
                 <div
                   key={item.title}

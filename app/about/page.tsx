@@ -109,7 +109,8 @@ export default function AboutPage() {
                 <p>
                   Today, AK Pharma Group is a GeM-registered, ISO 9001:2015, CE, and WHO-GMP certified supplier with an active
                   pan-India supply network, serving defence establishments, paramilitary units, and
-                  B2B institutional buyers across all Indian states.
+                  B2B institutional buyers across all Indian states and Union Territories, including the
+                  Andaman &amp; Nicobar and Lakshadweep Islands.
                 </p>
               </div>
             </div>
