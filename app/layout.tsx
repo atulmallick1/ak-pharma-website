@@ -17,6 +17,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.akpharmagroup.com'),
   title: 'AK Pharma Group — Defence & Institutional Pharmaceutical Supply',
   description:
     'AK Pharma Group is a West Bengal-based ISO 9001:2015, CE, and WHO-GMP certified pharmaceutical supplier to India\'s defence forces, paramilitary institutions, and B2B buyers across India.',
